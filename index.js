@@ -39,6 +39,9 @@ app.use(cors());
 app.use(cookieParser())
 app.use(express.json())
 
+app.get("/",(req,res)=>{
+    res.json("Server start")
+})
 /* A middleware that is used to catch errors. */
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
