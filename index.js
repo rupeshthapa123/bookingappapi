@@ -41,7 +41,7 @@ app.use(cookieParser());
 
 
 app.get("/",(req,res)=>{
-    res.json("Server start")
+    res.json("Server start");
 })
 /* A middleware that is used to catch errors. */
 app.use("/api/auth", authRoute);
