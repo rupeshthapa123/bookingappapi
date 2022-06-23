@@ -59,9 +59,9 @@ app.use((err, req, res, next)=>{
         stack: err.stack
     });
 });
-
+const port = process.env.PORT || 8800;
 /* Listening to the port 8800. */
-app.listen(process.env.PORT || 8800, "0.0.0.0" ,()=>{
+app.listen(port, "0.0.0.0" ,()=>{
     connect()
     console.log("Connected on PORT.");
 });
