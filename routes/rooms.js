@@ -3,7 +3,7 @@ const router = express.Router();
 const {createRoom, updateRoom, 
     deleteRoom, getRoom, 
     getRooms,
-    updateRoomAvailability} = require("../controllers/Room");
+    updateRoomAvailability} = require("../controllers/room");
 const { verifyAdmin } = require("../utils/verifyToken");
 
 //CREATE
